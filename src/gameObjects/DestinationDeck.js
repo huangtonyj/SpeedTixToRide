@@ -24,6 +24,7 @@ export default class DestinationDeck {
     const cards = [];
 
     while (cards.length < n) {
+      if (!this.pile.length) { this.resetAndShuffle()} ;
       cards.push(this.pile.shift());
     }
 
@@ -31,6 +32,7 @@ export default class DestinationDeck {
   }
 
   addToJunk(cards) {
+    this.junk = [...this.junk, ...cards];   
   }
 }
 
