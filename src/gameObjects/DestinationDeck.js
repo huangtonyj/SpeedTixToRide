@@ -21,7 +21,13 @@ export default class DestinationDeck {
   }
 
   drawFromPile(n = 3) {
-    
+    const cards = [];
+
+    while (cards.length < 3) {
+      cards.push(this.pile.shift());
+    }
+
+    return cards;
   }
 
   addToJunk(cards) {
