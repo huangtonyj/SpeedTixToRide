@@ -23,7 +23,7 @@ export default class DestinationDeck {
   drawFromPile(n = 3) {
     const cards = [];
 
-    while (cards.length < 3) {
+    while (cards.length < n) {
       cards.push(this.pile.shift());
     }
 
