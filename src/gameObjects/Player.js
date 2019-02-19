@@ -11,14 +11,22 @@ export default class Player {
     this.score = 0;
   }
 
-  draw() {
+  drawTrainColor(trainColor) {
 
   }
 
-  pick() {
+  pickTrainColor(trainColor) {
     
   }
 
-  claimRoute() {}
+  claimRoute(route) {}
+
+  pickDestinationCards(destinationCards) {
+    // ask which one to keep
+  }
 
 }
+
+
+// const PlayerColors = 
+// BLUE, Yellow, green, black, red
