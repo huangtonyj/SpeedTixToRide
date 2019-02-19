@@ -18,6 +18,8 @@ export default class DestinationDeck {
       const j = Math.floor(Math.random() * this.pile.length);
       [this.pile[i], this.pile[j]] = [this.pile[j], this.pile[i]];
     }
+
+    if (this.pile.length === 0) { throw 'Out of destination cards'; }
   }
 
   drawFromPile(n = 3) {
