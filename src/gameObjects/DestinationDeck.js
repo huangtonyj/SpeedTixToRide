@@ -7,7 +7,7 @@ export default class DestinationDeck {
   }
 
   resetAndShuffle() {
-    // move all
+    // move all to pile
     this.pile = [...this.pile, ...this.junk];
     this.junk = [];
   
