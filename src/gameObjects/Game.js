@@ -1,8 +1,8 @@
 import DestinationDeck from './DestinationDeck';
 import TrainDeck from './TrainDeck';
 
-import DESTINATIONCARDS from './gameData/destinationDeckUSA';
-import TRAINCARDS from './gameData/trainDeck';
+import DESTINATIONCARDS from './gameData/destinationDeckUSAData';
+import TRAINCARDS from './gameData/trainDeckData';
 
 export default class Game {
   constructor(numPlayers = 2) {
