@@ -1,7 +1,5 @@
-import DESTINATIONCARDS from './gameData/destinationDeckUSA';
-
 export default class DestinationDeck {
-  constructor(destinationCards = DESTINATIONCARDS) {
+  constructor(destinationCards) {
     this.pile = destinationCards;
     this.junk = [];
 
@@ -34,7 +32,7 @@ export default class DestinationDeck {
   }
 
   addToJunk(cards) {
-    this.junk = [...this.junk, ...cards];   
+    this.junk = [...this.junk, ...cards];
   }
 }
 
