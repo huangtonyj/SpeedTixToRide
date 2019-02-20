@@ -8,10 +8,12 @@ class App extends Component {
     const myGame = new Game(5);
     
     let drawnCards = [];
-      drawnCards = drawnCards.concat(myGame.DestinationDeck.drawFromPile());
-      drawnCards = drawnCards.concat(myGame.DestinationDeck.drawFromPile());
+      drawnCards = drawnCards.concat(myGame.TrainDeck.drawFromPile());
+      drawnCards = drawnCards.concat(myGame.TrainDeck.drawFromPile());
+      drawnCards = drawnCards.concat(myGame.TrainDeck.drawFromPile());
+      drawnCards = drawnCards.concat(myGame.TrainDeck.drawFromPile());
     console.log(drawnCards);
-    myGame.DestinationDeck.addToJunk(drawnCards);
+    myGame.TrainDeck.addToJunk(drawnCards);
     console.log(myGame);
     
     
